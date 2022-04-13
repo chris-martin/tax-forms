@@ -1,0 +1,38 @@
+cabal-version: 3.0
+
+name: tax-forms
+version: 0
+
+library
+    default-language: Haskell2010
+    ghc-options:
+        -Wall
+        -fdefer-typed-holes
+    default-extensions:
+        BlockArguments
+        DataKinds
+        DeriveFunctor
+        DerivingStrategies
+        DerivingVia
+        FlexibleContexts
+        FlexibleInstances
+        FunctionalDependencies
+        GADTs
+        LambdaCase
+        MultiParamTypeClasses
+        NoImplicitPrelude
+        NumericUnderscores
+        OverloadedLabels
+        RecordWildCards
+        ScopedTypeVariables
+        TemplateHaskell
+        TypeApplications
+    hs-source-dirs:
+        library/tax-forms
+    build-depends:
+        mtl,
+        optics,
+        relude
+    exposed-modules:
+        TaxForms.Utility,
+        TaxForms.Year2021.CapitalGainTaxWorksheet

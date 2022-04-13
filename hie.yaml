@@ -1,0 +1,4 @@
+cradle:
+  cabal:
+    - path: "./tax-forms/library/tax-forms"
+      component: "lib:tax-forms"
